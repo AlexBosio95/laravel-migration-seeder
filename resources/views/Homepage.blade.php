@@ -4,20 +4,27 @@
 
 @section('contain')
 
-    <h1>List</h1>
+    <div class="container">
 
-    <ul class="list-group">
-        @foreach ($Trains as $key => $train)
-            <li class="list-group-item">
-                <h5>{{$train['company']}}</h5>
-                <span>{{$train['departure_station'] . ' - ' . $train['arrival_station']}}</span>
-                <h5>{{$train['departure_time']}}</h5>
-                <h5>{{$train['arrival_time']}}</h5>
-                <h5>{{$train['train_code']}}</h5>
-                <h5>{{$train['number_carriages']}}</h5>
-            </li>
-        @endforeach
-    </ul>
+        <h4 class="text-center">List Train Today</h4>
+    
+        <ul class="list-group">
+            @foreach ($TrainsToday as $key => $train)
+                <li class="list-group-item">
+                    <h4>{{$train['company']}}</h4>
+                    <span>{{$train['departure_station'] . ' - ' . $train['arrival_station']}}</span>
+                    <div class="time">
+                        <span>{{$train['departure_time'] . ' - ' . $train['arrival_time']}}</span>
+                    </div>
+                    <h5>{{$train['train_code']}}</h5>
+                    <h5>{{$train['date']}}</h5>
+                    <h5>{{$train['number_carriages']}}</h5>
+                </li>
+            @endforeach
+        </ul>
+
+    </div>
+
 
     
 @endsection

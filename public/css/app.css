@@ -1,0 +1,7 @@
+main .list-group-item {
+  margin: 0.5rem 0;
+  border: none;
+  background-color: beige;
+  border-radius: 0.5rem;
+}
+
