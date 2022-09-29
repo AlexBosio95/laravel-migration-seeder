@@ -7,16 +7,15 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //
     public function Home(){
 
-        // try {
+        try {
             $Trains = Train::all();
             return view('Homepage', compact('Trains'));
 
-        // } catch (\Throwable $th) {
-        //     return view('ErrorPage');
-        // }
+        } catch (\Throwable $th) {
+            return view('ErrorPage');
+        }
 
         
     }
