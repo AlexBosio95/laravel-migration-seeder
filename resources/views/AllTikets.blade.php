@@ -6,11 +6,11 @@
 
 @section('contain')
 
-        <a class="all text-center" href="{{route('AllTikets')}}">View All</a>
+        <a class="all text-center" href="{{route('Home')}}">View Only today</a>
 
 
         <ul class="list-group mt-4">
-            @foreach ($TrainsToday as $key => $train)
+            @foreach ($Trains as $key => $train)
 
                 <li class="list-group-item">
 

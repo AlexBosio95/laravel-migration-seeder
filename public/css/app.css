@@ -1,7 +1,30 @@
+header {
+  color: white;
+}
+
+main {
+  color: rgba(255, 255, 255, 0.504);
+}
+
 main .list-group-item {
   margin: 0.5rem 0;
   border: none;
-  background-color: beige;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 208, 0);
   border-radius: 0.5rem;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+main .all {
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: black;
+  background-color: rgb(255, 208, 0);
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
 }
 

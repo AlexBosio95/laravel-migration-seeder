@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@Home')->name('Home');
+Route::get('/AllTikets', 'AllTiketsController@Tikets')->name('AllTikets');
