@@ -10,12 +10,13 @@ class HomeController extends Controller
     //
     public function Home(){
 
-        try {
-            // $Movies = Train::all();
-            return view('Homepage',);
-        } catch (\Throwable $th) {
-            return view('ErrorPage');
-        }
+        // try {
+            $Trains = Train::all();
+            return view('Homepage', compact('Trains'));
+
+        // } catch (\Throwable $th) {
+        //     return view('ErrorPage');
+        // }
 
         
     }

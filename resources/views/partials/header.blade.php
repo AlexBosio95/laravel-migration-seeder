@@ -1,5 +1,5 @@
 <header>
     <div class="container">
-        <h1 class="logo">Header</h1>
+        <h1 class="text-center">My Train DB</h1>
     </div>
 </header>
