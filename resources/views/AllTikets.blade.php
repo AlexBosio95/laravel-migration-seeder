@@ -2,7 +2,7 @@
 
 @section('title', 'TodayTikets')
 
-@section('titlesection', 'TodayTikets')
+@section('titlesection', 'All Tikets')
 
 @section('contain')
 
