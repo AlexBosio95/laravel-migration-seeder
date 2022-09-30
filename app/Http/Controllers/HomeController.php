@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function Home(){
 
         try {
-            $TrainsToday = Train::whereDate('date', Carbon::today())->get();
+            $TrainsToday = Train::whereDate('date', Carbon::today())->orderBy('departure_time', 'ASC')->get();
             return view('Homepage', compact('TrainsToday'));
 
         } catch (\Throwable $th) {
