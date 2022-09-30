@@ -24,6 +24,14 @@ main .all {
   border-radius: 0.5rem;
 }
 
+main .late {
+  color: red;
+}
+
+main .time {
+  color: green;
+}
+
 body {
   background-color: rgb(26, 26, 26);
 }
